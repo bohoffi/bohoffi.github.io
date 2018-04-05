@@ -3,7 +3,7 @@ body {
 }
 
 .landing {
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     color: white;
     background-color: #0d47a1;
@@ -14,7 +14,8 @@ body {
 .landing__profile {
     display: grid;
     grid-template-rows: auto;
-    padding-top: 3em;
+    padding: 3em 0;
+    justify-items: center;
 }
 
 .landing__profile__image {
@@ -42,6 +43,7 @@ body {
 
 .landing__profile__links {
     padding-top: 1em;
+    display: flex;
 }
 
 .landing__profile__links > a {
