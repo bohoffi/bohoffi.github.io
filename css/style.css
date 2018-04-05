@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+.landing {
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-color: #0d47a1;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.landing__profile {
+    display: grid;
+    grid-template-rows: auto;
+    padding-top: 3em;
+}
+
+.landing__profile__image {
+    max-width: 16em;
+    height: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    border-radius: 5px;
+    margin: auto;
+}
+
+.landing__profile__name {
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+
+.landing__profile__nickname {
+    font-size: 1.5em;
+    padding-top: 0.25em;
+}
+
+.landing__profile__tag-line {
+    font-size: 1em;
+    padding-top: 0.5em;
+}
+
+.landing__profile__links {
+    padding-top: 1em;
+}
+
+.landing__profile__links > a {
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.landing__profile__links > a > i {
+    font-size: 2em;
+    color: white;
+}
