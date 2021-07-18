@@ -1,0 +1,5 @@
+<div class="landing__profile__links" fxLayout="row" fxLayoutAlign="center space-between">
+    <a *ngFor="let link of links" target="_blank" [href]="link.url">
+        <i class="link-icon" [ngClass]="link.classes"></i>
+    </a>
+</div>

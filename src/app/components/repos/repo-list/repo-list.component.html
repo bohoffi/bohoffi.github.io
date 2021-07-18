@@ -1,0 +1,7 @@
+<div class="container">
+    <div fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutGap="16px grid" fxLayoutAlign="flex-start">
+        <div class="members__item" *ngFor="let repo of $repos | async" fxFlex fxFlex.sm="50%" fxFlex.md="33%" fxFlex.lg="25%">
+            <app-repo-item  [repository]="repo"></app-repo-item>
+        </div>
+    </div>
+</div>
