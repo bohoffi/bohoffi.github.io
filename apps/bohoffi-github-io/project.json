@@ -74,30 +74,6 @@
       },
       "defaultConfiguration": "development"
     },
-    "extract-i18n": {
-      "executor": "@angular-devkit/build-angular:extract-i18n",
-      "options": {
-        "browserTarget": "bohoffi-github-io:build"
-      }
-    },
-    "test": {
-      "executor": "@angular-devkit/build-angular:karma",
-      "options": {
-        "main": "apps/bohoffi-github-io/src/test.ts",
-        "polyfills": "apps/bohoffi-github-io/src/polyfills.ts",
-        "tsConfig": "apps/bohoffi-github-io/tsconfig.spec.json",
-        "karmaConfig": "apps/bohoffi-github-io/karma.conf.js",
-        "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/bohoffi-github-io/src/favicon.ico",
-          "apps/bohoffi-github-io/src/assets"
-        ],
-        "styles": [
-          "apps/bohoffi-github-io/src/styles.scss"
-        ],
-        "scripts": []
-      }
-    },
     "deploy": {
       "builder": "angular-cli-ghpages:deploy",
       "options": {}
