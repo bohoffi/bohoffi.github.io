@@ -3,12 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "nx",
-    "start": "nx serve --configuration development",
-    "start:prod": "nx serve",
+    "start": "nx run bohoffi-github-io:serve:development",
     "build": "nx build",
-    "watch": "nx build --watch --configuration development",
     "test": "nx test",
-    "deploy": "nx deploy --base-href=https://bohoffi.github.io/",
+    "deploy": "nx run bohoffi-github-io:deploy --base-href=https://bohoffi.github.io/",
     "postinstall": "node ./decorate-angular-cli.js"
   },
   "private": true,
