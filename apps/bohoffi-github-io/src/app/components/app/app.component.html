@@ -1,8 +1,21 @@
-<main class="landing">
-  <div class="profile" fxLayout="column" fxLayoutAlign="space-between">
-    <app-profile-basic></app-profile-basic>
-    <app-profile-links></app-profile-links>
+<main>
+
+  <div class="pt-4 pb-12 flex flex-col lg:flex-row justify-between lg:justify-center space-x-0 lg:space-x-8">
+
+    <img src="https://avatars3.githubusercontent.com/u/9944566?s=460&v=4"
+      class="h-auto max-w-[15rem] rounded-lg shadow-lg m-auto lg:m-0" />
+
+    <div class="flex flex-col justify-between lg:justify-center text-center lg:text-left space-y-4">
+
+      <span class="text-[2rem] font-medium">Sebastian Hoffmann</span>
+      <span class="text-[1.5rem]">@bohoffi</span>
+      <span>Enthusiastic Developer | Open-Source Lover | Guitarist</span>
+
+      <app-profile-links></app-profile-links>
+
+    </div>
   </div>
+
   <div>
     <app-repo-list></app-repo-list>
   </div>

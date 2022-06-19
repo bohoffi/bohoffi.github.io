@@ -25,7 +25,10 @@
           "apps/bohoffi-github-io/src/assets"
         ],
         "styles": [
-          "apps/bohoffi-github-io/src/styles.scss"
+          "apps/bohoffi-github-io/src/styles.scss",
+          "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+          "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+          "node_modules/@fortawesome/fontawesome-free/scss/brands.scss"
         ],
         "scripts": []
       },
