@@ -33,6 +33,7 @@
     "@angular/cli": "^14.0.2",
     "@angular/compiler-cli": "^14.0.2",
     "@nrwl/workspace": "14.3.6",
+    "@tailwindcss/line-clamp": "^0.4.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^1.0.0",
