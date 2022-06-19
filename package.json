@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "nx",
     "start": "nx run bohoffi-github-io:serve:development",
-    "build": "nx build",
-    "test": "nx test",
+    "build": "nx run bohoffi-github-io:build",
     "deploy": "nx run bohoffi-github-io:deploy --base-href=https://bohoffi.github.io/",
     "postinstall": "node ./decorate-angular-cli.js"
   },
