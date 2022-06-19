@@ -3,11 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-
 import { HttpCacheInterceptorModule } from '@ngneat/cashew';
 
 import { AppComponent } from './components/app/app.component';
@@ -29,12 +24,6 @@ import { RepoNamePipe } from './pipes/repo-name.pipe';
     BrowserModule,
     HttpClientModule,
     NoopAnimationsModule,
-
-    MatBadgeModule,
-    MatCardModule,
-    MatIconModule,
-
-    FlexLayoutModule,
 
     HttpCacheInterceptorModule.forRoot(),
   ],
