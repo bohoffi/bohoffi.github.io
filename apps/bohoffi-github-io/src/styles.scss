@@ -6,17 +6,3 @@ html,
 body {
   height: 100%;
 }
-
-// see: https://websemantics.uk/tools/responsive-font-calculator/
-@media (min-width: 768px) {
-  :root {
-    font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
-    min-height: 0vw;
-  }
-}
-
-@media (min-width: 1920px) {
-  :root {
-    font-size: 24px;
-  }
-}
