@@ -79,7 +79,15 @@
     },
     "deploy": {
       "builder": "angular-cli-ghpages:deploy",
-      "options": {}
+      "options": {
+        "name": "DeployBot",
+        "email": "bo.hoffi@gmail.com",
+        "noBuild": true,
+        "noSilent": true,
+        "dir": "dist/apps/bohoffi-github-io",
+        "cname": "github.com",
+        "baseHref": "https://bohoffi.github.io/"
+      }
     }
   }
 }
