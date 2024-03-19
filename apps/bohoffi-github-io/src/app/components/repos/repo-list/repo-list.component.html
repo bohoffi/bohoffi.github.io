@@ -1,24 +1,18 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 px-4 pb-4">
-
-  <ng-container *ngFor="let repository of $repos | async">
-
+  @for (repository of $repos | async; track repository.id) {
     <a [href]="repository.html_url" target="_blank" class="no-underline cursor-pointer">
-
-      <div
-        class="bg-white text-black h-full flex flex-col rounded-lg p-2 shadow-md divide-y divide-gray-300/75 text-left">
-
+      <div class="bg-white text-black h-full flex flex-col rounded-lg p-2 shadow-md divide-y divide-gray-300/75 text-left">
         <div class="pb-2 font-medium">
-          {{repository | repoName}} <i *ngIf="repository.archived" class="fa-solid fa-box-archive"></i>
+          {{ repository | repoName }}
+          @if (repository.archived) {
+            <i class="fa-solid fa-box-archive"></i>
+          }
         </div>
 
         <p class="pt-2 px-2 text-sm line-clamp-3">
-          {{repository.description}}
+          {{ repository.description }}
         </p>
-
       </div>
-
     </a>
-
-  </ng-container>
-
+  }
 </div>

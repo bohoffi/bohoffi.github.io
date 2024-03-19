@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Repository } from '../interfaces/repository';
 
 @Pipe({
-  name: 'repoName'
+    name: 'repoName',
+    standalone: true
 })
 export class RepoNamePipe implements PipeTransform {
 

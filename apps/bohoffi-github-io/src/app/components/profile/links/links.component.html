@@ -1,5 +1,7 @@
 <div class="flex flex-row justify-center">
-  <a *ngFor="let link of links" target="_blank" [href]="link.url" class="mx-4 no-underline">
-    <i class="text-[2rem]" [ngClass]="link.classes"></i>
-  </a>
+  @for (link of links; track link.url) {
+    <a target="_blank" [href]="link.url" class="mx-4 no-underline">
+      <i class="text-[2rem]" [ngClass]="link.classes"></i>
+    </a>
+  }
 </div>
