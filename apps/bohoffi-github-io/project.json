@@ -78,6 +78,9 @@
         }
       },
       "defaultConfiguration": "development"
+    },
+    "deploy": {
+      "executor": "angular-cli-ghpages:deploy"
     }
   }
 }
