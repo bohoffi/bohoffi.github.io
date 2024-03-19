@@ -5,8 +5,7 @@
     "ng": "nx",
     "start": "nx run bohoffi-github-io:serve:development",
     "build": "nx run bohoffi-github-io:build",
-    "deploy": "nx run bohoffi-github-io:deploy",
-    "postinstall": "node ./decorate-angular-cli.js"
+    "deploy": "nx run bohoffi-github-io:deploy"
   },
   "private": true,
   "dependencies": {
