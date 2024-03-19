@@ -1,9 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-
-import { withCache } from '@ngneat/cashew';
-
 import { Repository } from '../interfaces/repository';
 
 @Injectable({
@@ -14,10 +11,7 @@ export class RepoService {
 
   userRepositories(username: string): Observable<Repository[]> {
     return this.http.get<Repository[]>(
-      `https://api.github.com/users/${username}/repos`,
-      {
-        context: withCache(),
-      }
+      `https://api.github.com/users/${username}/repos`
     );
   }
 }
