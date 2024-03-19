@@ -1,4 +1,6 @@
 {
+  "name": "bohoffi-github-io",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "generators": {
     "@schematics/angular:component": {
@@ -20,10 +22,7 @@
         "polyfills": "apps/bohoffi-github-io/src/polyfills.ts",
         "tsConfig": "apps/bohoffi-github-io/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/bohoffi-github-io/src/favicon-32x32.png",
-          "apps/bohoffi-github-io/src/assets"
-        ],
+        "assets": ["apps/bohoffi-github-io/src/favicon-32x32.png", "apps/bohoffi-github-io/src/assets"],
         "styles": [
           "apps/bohoffi-github-io/src/styles.scss",
           "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
@@ -69,24 +68,22 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "bohoffi-github-io:build:production"
+          "buildTarget": "bohoffi-github-io:build:production"
         },
         "development": {
-          "browserTarget": "bohoffi-github-io:build:development"
+          "buildTarget": "bohoffi-github-io:build:development"
         }
       },
       "defaultConfiguration": "development"
     },
     "deploy": {
-      "builder": "angular-cli-ghpages:deploy",
+      "executor": "angular-cli-ghpages:deploy",
       "options": {
         "name": "DeployBot",
         "email": "bo.hoffi@gmail.com",
-        "noBuild": true,
-        "noSilent": true,
         "dir": "dist/apps/bohoffi-github-io",
         "cname": "github.com",
-        "baseHref": "https://bohoffi.github.io/"
+        "noNojekyll": true
       }
     }
   }
