@@ -1,16 +1,8 @@
 {
-  "affected": {
-    "defaultBase": "main"
-  },
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ],
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"],
       "cache": true
     },
     "lint": {
@@ -28,14 +20,10 @@
     "packageManager": "npm"
   },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "sharedGlobals": [],
-    "production": [
-      "default"
-    ]
+    "production": ["default"]
   },
-  "useInferencePlugins": false
+  "useInferencePlugins": false,
+  "defaultBase": "main"
 }
