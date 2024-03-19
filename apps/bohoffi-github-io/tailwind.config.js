@@ -1,4 +1,4 @@
-const { createGlobPatternsForDependencies } = require('@nrwl/angular/tailwind');
+const { createGlobPatternsForDependencies } = require('@nx/angular/tailwind');
 const { join } = require('path');
 
 module.exports = {
@@ -9,7 +9,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/line-clamp')
-  ],
+  plugins: [require('@tailwindcss/line-clamp')],
 };
