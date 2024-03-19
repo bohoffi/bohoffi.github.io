@@ -22,10 +22,7 @@
         "polyfills": "apps/bohoffi-github-io/src/polyfills.ts",
         "tsConfig": "apps/bohoffi-github-io/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/bohoffi-github-io/src/favicon-32x32.png",
-          "apps/bohoffi-github-io/src/assets"
-        ],
+        "assets": ["apps/bohoffi-github-io/src/favicon-32x32.png", "apps/bohoffi-github-io/src/assets"],
         "styles": [
           "apps/bohoffi-github-io/src/styles.scss",
           "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
@@ -80,7 +77,14 @@
       "defaultConfiguration": "development"
     },
     "deploy": {
-      "executor": "angular-cli-ghpages:deploy"
+      "executor": "angular-cli-ghpages:deploy",
+      "options": {
+        "name": "DeployBot",
+        "email": "bo.hoffi@gmail.com",
+        "dir": "dist/apps/bohoffi-github-io",
+        "cname": "github.com",
+        "noNojekyll": true
+      }
     }
   }
 }
