@@ -71,10 +71,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "bohoffi-github-io:build:production"
+          "buildTarget": "bohoffi-github-io:build:production"
         },
         "development": {
-          "browserTarget": "bohoffi-github-io:build:development"
+          "buildTarget": "bohoffi-github-io:build:development"
         }
       },
       "defaultConfiguration": "development"
